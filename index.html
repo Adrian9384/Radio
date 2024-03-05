@@ -9,22 +9,7 @@
 	<link rel="stylesheet" href="styles.css">
 	<link rel="shortcut icon" href="./images/MyFavicon.png" type="image/x-icon">
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-	<script>
 
-	document.addEventListener("DOMContentLoaded", function() {
-		var audioPlayer = document.getElementById("audio-player");
-		var playButtons = document.querySelectorAll(".play-button");
-
-		playButtons.forEach(function(button) {
-			button.addEventListener("click", function() {
-				var stationSrc = this.getAttribute("data-src");
-				audioPlayer.src = stationSrc;
-				audioPlayer.play();
-			});
-		});
-	});
-
-	</script
   </head>
   <body>
     <div class="main-container">
@@ -34,7 +19,7 @@
                 <div class="item col-md-auto col-lg-auto">
                     <img src="./images/onefm-logo.jpg" />
                     <div class="play">
-						<button class="fa fa-play play-button" data-src="https://live.onefm.ro/onefm.aacp"></button>
+						<button class="fa fa-play play-button" data-src="https://live.onefm.ro/onefm.aacp" data-name="One FM"></button>
                     </div>
                     <h4>One FM</h4>
                 </div>
@@ -42,7 +27,7 @@
                 <div class="item col-md-auto col-lg-auto">
                     <img src="./images/KissFM.jpg" />
                     <div class="play">
-                        <button class="fa fa-play play-button" data-src="https://live.kissfm.ro/kissfm.aacp"></button>
+                        <button class="fa fa-play play-button" data-src="https://live.kissfm.ro/kissfm.aacp" data-name="Kiss FM"></button>
                     </div>
                     <h4>Kiss FM</h4>
                 </div>
@@ -50,7 +35,7 @@
                 <div class="item col-md-auto col-lg-auto">
                     <img src="./images/Magic FM.jpg" />
                     <div class="play">
-                       <button class="fa fa-play play-button" data-src="https://live.magicfm.ro/magicfm.aacp"></button>
+                       <button class="fa fa-play play-button" data-src="https://live.magicfm.ro/magicfm.aacp" data-name="Magic FM"></button>
                     </div>
                     <h4>Magic FM</h4>
                 </div>
@@ -58,7 +43,7 @@
                 <div class="item col-md-auto col-lg-auto">
                     <img src="./images/Radio Zu.jpg" />
                     <div class="play">
-                        <button class="fa fa-play play-button" data-src="https://live4ro.antenaplay.ro/radiozu/radiozu-48000.m3u8"></button>
+                        <button class="fa fa-play play-button" data-src="https://live4ro.antenaplay.ro/radiozu/radiozu-48000.m3u8" data-name="Radio ZU"></button>
                     </div>
                     <h4>Radio ZU</h4>
                 </div>
@@ -66,7 +51,7 @@
                 <div class="item col-md-auto col-lg-auto">
                     <img src="./images/Europa FM.jpg" />
                     <div class="play">
-                        <button class="fa fa-play play-button" data-src="https://astreaming.edi.ro:8443/EuropaFM_aac"></button>
+                        <button class="fa fa-play play-button" data-src="https://astreaming.edi.ro:8443/EuropaFM_aac" data-name="Europa FM"></button>
                     </div>
                     <h4>Europa FM</h4>
                 </div>
@@ -74,7 +59,7 @@
                 <div class="item col-md-auto col-lg-auto">
                     <img src="./images/Virgin Radio.jpg" />
                     <div class="play">
-                        <button class="fa fa-play play-button" data-src="https://astreaming.edi.ro:8443/VirginRadio_aac"></button>
+                        <button class="fa fa-play play-button" data-src="https://astreaming.edi.ro:8443/VirginRadio_aac" data-name="Virgin Radio"></button>
                     </div>
                     <h4>Virgin Radio</h4>
                 </div>
@@ -82,7 +67,7 @@
                 <div class="item col-md-auto col-lg-auto">
                     <img src="./images/Rock FM.jpg" />
                     <div class="play">
-                        <button class="fa fa-play play-button" data-src="https://live.rockfm.ro/rockfm.aacp"></button>
+                        <button class="fa fa-play play-button" data-src="https://live.rockfm.ro/rockfm.aacp" data-name="Rock FM"></button>
                     </div>
                     <h4>Rock FM</h4>
                 </div>
@@ -90,7 +75,7 @@
 				<div class="item col-md-auto col-lg-auto">
                     <img src="./images/Dance FM.jpg" />
                     <div class="play">
-                        <button class="fa fa-play play-button" data-src="https://edge126.rcs-rds.ro/profm/dancefm.mp3"></button>
+                        <button class="fa fa-play play-button" data-src="https://edge126.rcs-rds.ro/profm/dancefm.mp3" data-name="Dance FM"></button>
                     </div>
                     <h4>Dance FM</h4>
                 </div>
@@ -98,7 +83,7 @@
 				<div class="item col-md-auto col-lg-auto">
                     <img src="./images/Radio Cafe.jpg"/>
                     <div class="play">
-						<button class="fa fa-play play-button" data-src="https://live.radiocafe.ro/live.aac"></button>
+						<button class="fa fa-play play-button" data-src="https://live.radiocafe.ro/live.aac" data-name="Radio Cafe"></button>
                     </div>
                     <h4>Radio Cafe</h4>
                 </div>
@@ -106,7 +91,7 @@
 				<div class="item col-md-auto col-lg-auto">
                     <img src="./images/Hit FM.jpg"/>
                     <div class="play">
-						<button class="fa fa-play play-button" data-src="https://s3.myradiostream.com/4404/listen.mp3"></button>
+						<button class="fa fa-play play-button" data-src="https://s3.myradiostream.com/4404/listen.mp3" data-name="Hit FM"></button>
                     </div>
                     <h4>Hit FM</h4>
                 </div> 
@@ -114,7 +99,7 @@
 				<div class="item col-md-auto col-lg-auto">
                     <img src="./images/BigFM.jpg"/>
                     <div class="play">
-						<button class="fa fa-play play-button" data-src="http://e15327.cloudrad.io:8000/;?type=http&nocache=122"></button>
+						<button class="fa fa-play play-button" data-src="http://e15327.cloudrad.io:8000/;?type=http&nocache=122" data-name="Big FM"></button>
                     </div>
                     <h4>Big FM</h4>
                 </div> 
@@ -122,20 +107,18 @@
 				<div class="item col-md-auto col-lg-auto">
                     <img src="./images/Mega Hit.webp"/>
                     <div class="play">
-						<button class="fa fa-play play-button" data-src="http://live.radiomegahit.eu:8080/;"></button>
+						<button class="fa fa-play play-button" data-src="http://live.radiomegahit.eu:8080/;" data-name="Mega Hit"></button>
                     </div>
                     <h4>Mega Hit</h4>
                 </div> 
 
-		<div class="item col-md-auto col-lg-auto">
+				<div class="item col-md-auto col-lg-auto">
                     <img src="./images/ProFM.webp"/>
                     <div class="play">
-						<button class="fa fa-play play-button" data-src="https://edge126.rcs-rds.ro/profm/profm.mp3"></button>
+						<button class="fa fa-play play-button" data-src="https://edge126.rcs-rds.ro/profm/profm.mp3" data-name="Pro FM"></button>
                     </div>
                     <h4>Pro FM</h4>
                 </div> 
-
-		
             </div>
         </div>
 		
@@ -145,31 +128,127 @@
                 <div class="item col-md-auto col-lg-auto">
                     <img src="./images/Heart FM.webp" />
                     <div class="play">
-						<button class="fa fa-play play-button" data-src="https://media-ssl.musicradio.com/HeartLondon"></button>
+						<button class="fa fa-play play-button" data-src="https://media-ssl.musicradio.com/HeartLondon" data-name="Heart FM London"></button>
                     </div>
                     <h4>Heart FM London</h4>
                 </div>
 
-		<div class="item col-md-auto col-lg-auto">
+				<div class="item col-md-auto col-lg-auto">
                     <img src="./images/OneWorldFm.webp" />
                     <div class="play">
-						<button class="fa fa-play play-button" data-src="https://22193.live.streamtheworld.com/OWR_WORLD_RADIO_NL.mp3"></button>
+						<button class="fa fa-play play-button" data-src="https://22193.live.streamtheworld.com/OWR_WORLD_RADIO_NL.mp3" data-name="One World Fm"></button>
                     </div>
                     <h4>One World Fm</h4>
-		</div>
+				</div>
 		
+			</div>
 		</div>
-    </div>
+	</div>
+	
+	
 
     <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
 
-  </body>
+	</body>
    <footer class="fixed-bottom py-3">
         <div class="container">
             <audio id="audio-player" controls class="w-100">
                 Your browser does not support the audio element.
             </audio>
         </div>
+		
+		<div class="footer-player">
+        <div class="footer-player-left">
+            <div class="footer-player-left-song">
+                <div class="footer-player-left-song-name">Now playing:</div>
+                <div class="footer-player-left-song-artist" id="currently-playing">Radio</div>
+            </div>
+            <div class="footer-player-left-like">
+                <!-- <img src="assets/FiiledLike.svg" alt="" class="spotify-color" style="height: 18px; width: 18px;"> -->
+            </div>
+        </div>
+        <div class="footer-player-middle">
+            <div class="footer-player-middle-buttons">
+                <!-- <img src="assets/Shuffle.svg" alt="" class="gray-filtered"> -->
+                <img src="assets/Previous.svg" alt="" class="gray-filtered">
+                <span class="pause-button" onclick="togglePlayPause()">
+                    <img id="playPauseIcon" src="assets/Play.svg" alt="">
+                </span>
+				
+                <img src="assets/Next.svg" alt="" class="gray-filtered">
+                <!-- <img src="assets/Repeat.svg" alt="" class="gray-filtered"> -->
+            </div>
+            
+        </div>
+        <div class="footer-player-right">
+            <div class="footer-player-right-buttons">
+                <!-- <img src="assets/Lyrics.svg" alt=""> -->
+                <!-- <img src="assets/Queue.svg" class="filtered-img" alt=""> -->
+                <!-- <img src="assets/Connect to a device.svg" class="filtered-img" alt=""> -->
+                <img src="assets/Volume.svg" class="filtered-img" alt="">
+                <div class="player-slider" style="margin-right: 20px; width: 200px;">
+                    <input type="range" id="volumeRange" min="0" max="100" value="30" style="width:75px; position: relative; top:-5px;">
+                </div>
+                <!-- <img src="assets/Full screen.svg" class="filtered-img" alt=""> -->
+            </div>
+        </div>
+    </div>
     </footer>
-  
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+	var audioPlayer = document.getElementById("audio-player");
+	var playButtons = document.querySelectorAll(".play-button");
+	var currentlyPlaying = document.getElementById("currently-playing");
+
+	playButtons.forEach(function(button) {
+		button.addEventListener("click", function() {
+			var stationSrc = this.getAttribute("data-src");
+			var stationName = this.getAttribute("data-name");
+			audioPlayer.src = stationSrc;
+			audioPlayer.play();
+			currentlyPlaying.textContent = stationName;
+		});
+	});
+});
+
+	var audioPlayer = document.getElementById("audio-player");
+
+	var playPauseButton = document.getElementById("playPauseButton");
+	var playPauseIcon = document.getElementById("playPauseIcon");
+		
+	function togglePlayPause() {
+	  if (audioPlayer.paused) {
+		audioPlayer.play();
+		playPauseIcon.src = "assets/Pause.svg";
+	  } else {
+		audioPlayer.pause();
+		playPauseIcon.src = "assets/Play.svg";
+	  }
+	}
+
+	// Update icon when audio is played or paused
+	audioPlayer.onplay = function() {
+	  playPauseIcon.src = "assets/Pause.svg";
+	};
+
+	audioPlayer.onpause = function() {
+	  playPauseIcon.src = "assets/Play.svg";
+	};
+
+	
+	var volumeRange = document.getElementById("volumeRange");
+	
+	function controlVolume(audioElement, rangeInputElement) {
+	  // Set the initial volume
+	  audioElement.volume = rangeInputElement.value / 100;
+
+	  // Update volume when range input changes
+	  rangeInputElement.addEventListener("input", function() {
+		audioElement.volume = this.value / 100;
+	  });
+	}
+	
+	controlVolume(audioPlayer, volumeRange);
+
+	</script
 </html>
